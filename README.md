@@ -33,3 +33,13 @@
 [<img title="Jira" alt="'Jira' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" width="16px" />](https://www.atlassian.com/software/jira)&nbsp;&nbsp;&nbsp;&nbsp;
 [<img title="GitHub" alt="'GitHub' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="16px" />](https://github.com/)&nbsp;&nbsp;&nbsp;&nbsp;
 [<img title="Docker" alt="'Docker' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" width="16px" />](https://www.docker.com/)
+
+## 🎒 My Unexpected Talents
+
+🕵🏾‍♀️ **Detective:** _Investigate thoroughly into the intricacies of customers' needs & their market landscape_
+
+👩🏾‍💼 **Coordinator:** _Harmonize the myriad of customers' ideas & requirements to distill a comprehensive purpose_
+
+👩🏾‍🏫 **Advisor:** _Provide tailored advice & guidance to elevate customers' skills or/and to refine their products_
+
+👩🏾‍🎨 **Designer:** _Craft captivating user interfaces that bring customers' visions to life_
