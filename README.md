@@ -1,5 +1,7 @@
 # 🌌 Welcome to my U-verse ! 🌌
 
+🌟 **My Chosen Destiny:** _JavaScript Full-Stack Engineer_ 🌟
+
 ## ⚔️ My Honed Skills
 
 ### 🎚️ Platforms
