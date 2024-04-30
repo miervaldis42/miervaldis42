@@ -1,5 +1,7 @@
 # 🌌 Welcome to my U-verse ! 🌌
 
+🌟 **My Chosen Destiny:** _TypeScript Full-Stack Developer_ 🌟
+
 ## ⚔️ My Honed Skills
 
 ### Platforms
