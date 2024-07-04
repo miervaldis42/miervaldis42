@@ -1,6 +1,6 @@
 # 🌌 Welcome to my U-verse ! 🌌
 
-🌟 **My Chosen Destiny:** _TypeScript Full-Stack Developer_ 🌟
+**My Chosen Aspiration:** _TypeScript Full-Stack Developer & Product Manager_
 
 ## ⚔️ My Honed Skills
 
