@@ -203,3 +203,12 @@ _An evolving **ecosystem of automation tools & digital workflows** for **short-t
 > _Git and GitHub are curated and are not assigned measured percentages._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse--)
+
+[//]: # "Mascot Corner"
+
+<h3 align="center"><b>🤫 <em>A wild Lixi is dreaming about our next projects~<em> 🙊</b></h3>
+
+<div>
+    <img src="./assets/mascot/thoughts/dream-cloud.svg" alt="Cloud displaying miervaldis42's ongoing projects" />
+    <img src="./assets/mascot/lixi.png" alt="Sleeping Lixi mascot" title="Lixi" width="50%" />
+</div>
