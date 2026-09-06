@@ -87,3 +87,17 @@ _An evolving **ecosystem of automation tools & digital workflows** for **short-t
 🎨 **Programmatic Illustration & Animation** — _2D vector graphics, 3D scenes, motion & lightweight interactive visuals._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse--)
+
+[//]: # "Soft Skill List"
+
+## ✨ My Unexpected Talents
+
+🕵🏾‍♀️ **Detective** _(a.k.a Research & Discovery)_ — _**Investigate customer needs & market context** to uncover the details that shape better product decisions._
+
+👩🏾‍💼 **Coordinator** _(a.k.a Product Synthesis & Planning)_ — _**Connect ideas, requirements & constraints** to turn scattered inputs into a coherent product direction._
+
+👩🏾‍🏫 **Advisor** _(a.k.a Guidance & Knowledge Sharing)_ — _**Share tailored guidance** to help people strengthen their skills, decisions & products._
+
+👩🏾‍🎨 **Designer** _(a.k.a UI/UX & Visual Direction)_ — _**Craft engaging interfaces** that translate product ideas into clear & expressive user experiences._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse--)
