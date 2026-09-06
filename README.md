@@ -53,3 +53,37 @@
 🤝 **AI as Engineering Collaborator** — _Brainstorm with it, challenge assumptions & prototype ideas quickly while keeping verification, architectural judgment & final decisions human-led._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse--)
+
+[//]: # "Current Work & Learning Subjects"
+
+## 💭 On my mind~
+
+### 🔭 Currently Building
+
+🌌 **U-verse Ecosystem**
+
+_A **personal portfolio universe** bringing together full-stack engineering, design direction, reusable systems & the tools supporting them._
+
+[Explore the project →]()
+
+🧰 **Atelier**
+
+_A **project factory** for **starting & structuring new projects** with reusable architecture, conventions & tooling._
+
+[Explore the project →]()
+
+🌺 **Songe Péi Ecosystem**
+
+_An evolving **ecosystem of automation tools & digital workflows** for **short-term rental operations**._
+
+[Explore the project →]()
+
+### 🌱 Currently Learning
+
+🤖 **AI Engineering** — _Agents, RAG, MCP & AI-assisted workflows through skills & plugins._
+
+🧭 **Product Engineering** — _Product discovery, architecture, developer experience & iterative delivery._
+
+🎨 **Programmatic Illustration & Animation** — _2D vector graphics, 3D scenes, motion & lightweight interactive visuals._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse--)
