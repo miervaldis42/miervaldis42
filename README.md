@@ -68,3 +68,15 @@ _An evolving **ecosystem of automation tools & digital workflows** for managing 
 [Explore the project →](https://songe-pei-ecosystem.vercel.app/)
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "My Daily Learning Doses"
+
+### 🌱 Currently Learning
+
+🤖 **AI Engineering** — _Agents, RAG, MCP & AI-assisted workflows through skills & plugins._
+
+🧭 **Product Engineering** — _Product discovery, architecture, developer experience & iterative delivery._
+
+🎨 **Programmatic Illustration & Animation** — _2D vector graphics, 3D scenes, motion & lightweight interactive visuals._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
