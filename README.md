@@ -77,3 +77,13 @@ _A **project factory** for **starting & structuring new projects** with reusable
 _An evolving **ecosystem of automation tools & digital workflows** for **short-term rental operations**._
 
 [Explore the project →](https://songe-pei-ecosystem.vercel.app/)
+
+### 🌱 Currently Learning
+
+🤖 **AI Engineering** — _Agents, RAG, MCP & AI-assisted workflows through skills & plugins._
+
+🧭 **Product Engineering** — _Product discovery, architecture, developer experience & iterative delivery._
+
+🎨 **Programmatic Illustration & Animation** — _2D vector graphics, 3D scenes, motion & lightweight interactive visuals._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse--)
