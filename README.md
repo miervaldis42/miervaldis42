@@ -39,3 +39,17 @@
         />
     </a>
 </p>
+
+[//]: # "My ways of working"
+
+## 🧠 My Documented Philosophy
+
+🧩 **Compartmentalizing Complexity** — _Set clear boundaries for growing systems to remain understandable, adaptable & maintainable._
+
+📚 **Documentation as Blueprint** — _Give future humans & AI collaborators a map through a project's architecture, conventions & reasoning._
+
+🧪 **Tooling & Testing as Foundation** — _Treat tooling & testing as structural parts of the product, not final details postponed to the end._
+
+🤝 **AI as Engineering Collaborator** — _Brainstorm with it, challenge assumptions & prototype ideas quickly while keeping verification, architectural judgment & final decisions human-led._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse--)
