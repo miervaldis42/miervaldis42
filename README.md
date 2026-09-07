@@ -101,3 +101,105 @@ _An evolving **ecosystem of automation tools & digital workflows** for **short-t
 👩🏾‍🎨 **Designer** _(a.k.a UI/UX & Visual Direction)_ — _**Craft engaging interfaces** that translate product ideas into clear & expressive user experiences._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse--)
+
+[//]: # "Tech Stack Listing"
+
+## ⚔️ My Honed Skills
+
+### 👨‍💻 Applications & Systems
+
+🌐 Web Apps · 📱 Mobile Apps · 🖥️ Desktop Apps · ⚙️ Servers & APIs · 🤖 AI Automation
+
+### 📐 Responsive Interfaces
+
+🖥️ Desktop · 💻 Laptop · 📟 Tablet · 📱 Mobile
+
+### 🧬 Languages & Web Foundations
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/languages-web-foundations.svg"
+        alt="Languages & Web Foundations statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above are calculated from [GitHub Linguist](https://github.com/github-linguist/linguist) data across my analyzed repositories._
+
+### 🧩 Frontend
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/frontend.svg"
+        alt="Frontend statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### 🎨 UI Systems & Design
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/ui-systems-design.svg"
+        alt="UI Systems & Design statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+>
+> _Figma is curated and is not assigned a measured percentage._
+
+### ⚙️ Backend & Data
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/backend-data.svg"
+        alt="Backend & Data statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### 🧪 Testing & Tooling
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/testing-tooling.svg"
+        alt="Testing & Tooling statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### 🏗️ Architecture & Delivery
+
+<p align="center">
+    <img
+        src="./assets/tech-stack/statistics/architecture-delivery.svg"
+        alt="Architecture & Delivery statistics"
+        width="560"
+    />
+</p>
+
+> 🖋️ **_N.B._:**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+>
+> _Git and GitHub are curated and are not assigned measured percentages._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse--)
