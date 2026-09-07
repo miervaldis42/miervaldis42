@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 148" role="img" aria-labelledby="title description">
+  <title id="title">Languages &amp; Web Foundations</title>
+  <desc id="description">TypeScript: 33.2%; JavaScript: 48.0%; HTML: 10.1%; CSS: 8.7%. Language share among TypeScript, JavaScript, HTML, and CSS. Code statistics, not proficiency.</desc>
+  <!-- Local icon provenance and license notices: ../icons/SOURCES.md.
+       HTML5 Logo by W3C: https://www.w3.org/html/logo/ (CC BY 3.0).
+       Husky illustration: Twemoji, Twitter and contributors (CC BY 4.0).
+       Devicon artwork: MIT; see ../icons/DEVICON-LICENSE. -->
+  <style>
+    .name, .statistic { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; text-anchor: middle; }
+    .name { fill: #1f2328; font-size: 15px; font-weight: 600; }
+    .pill { fill: #eff1f3; }
+    .statistic { fill: #59636e; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .theme-light-only { display: inline; }
+    .theme-dark-only { display: none; }
+    @media (prefers-color-scheme: dark) {
+      .name { fill: #f0f6fc; }
+      .pill { fill: #262c36; }
+      .statistic { fill: #c9d1d9; }
+      .theme-light-only { display: none; }
+      .theme-dark-only { display: inline; }
+    }
+  </style>
+  <g class="card" transform="translate(70 0)">
+    <title>TypeScript: 33.2%; 134533 of 405703 relevant Linguist bytes</title>
+    <svg x="-24" y="16" width="48" height="48" viewBox="0 0 128 128" fill="none" aria-hidden="true"><rect fill="#3178c6" height="128" rx="6" width="128"/><path clip-rule="evenodd" d="m74.2622 99.468v14.026c2.2724 1.168 4.9598 2.045 8.0625 2.629 3.1027.585 6.3728.877 9.8105.877 3.3503 0 6.533-.321 9.5478-.964 3.016-.643 5.659-1.702 7.932-3.178 2.272-1.476 4.071-3.404 5.397-5.786 1.325-2.381 1.988-5.325 1.988-8.8313 0-2.5421-.379-4.7701-1.136-6.6841-.758-1.9139-1.85-3.6159-3.278-5.1062-1.427-1.4902-3.139-2.827-5.134-4.0104-1.996-1.1834-4.246-2.3011-6.752-3.353-1.8352-.7597-3.4812-1.4975-4.9378-2.2134-1.4567-.7159-2.6948-1.4464-3.7144-2.1915-1.0197-.7452-1.8063-1.5341-2.3598-2.3669-.5535-.8327-.8303-1.7751-.8303-2.827 0-.9643.2476-1.8336.7429-2.6079s1.1945-1.4391 2.0976-1.9943c.9031-.5551 2.0101-.9861 3.3211-1.2929 1.311-.3069 2.7676-.4603 4.3699-.4603 1.1658 0 2.3958.0877 3.6928.263 1.296.1753 2.6.4456 3.911.8109 1.311.3652 2.585.8254 3.824 1.3806 1.238.5552 2.381 1.198 3.43 1.9285v-13.1051c-2.127-.8182-4.45-1.4245-6.97-1.819s-5.411-.5917-8.6744-.5917c-3.3211 0-6.4674.3579-9.439 1.0738-2.9715.7159-5.5862 1.8336-7.844 3.353-2.2578 1.5195-4.0422 3.4553-5.3531 5.8075-1.311 2.3522-1.9665 5.1646-1.9665 8.4373 0 4.1785 1.2017 7.7433 3.6052 10.6945 2.4035 2.9513 6.0523 5.4496 10.9466 7.495 1.9228.7889 3.7145 1.5633 5.375 2.323 1.6606.7597 3.0954 1.5486 4.3044 2.3668s2.1628 1.7094 2.8618 2.6736c.7.9643 1.049 2.06 1.049 3.2873 0 .9062-.218 1.7462-.655 2.5202s-1.1 1.446-1.9885 2.016c-.8886.57-1.9956 1.016-3.3212 1.337-1.3255.321-2.8768.482-4.6539.482-3.0299 0-6.0305-.533-9.0021-1.6-2.9715-1.066-5.7245-2.666-8.2591-4.799zm-23.5596-34.9136h18.2974v-11.5544h-51v11.5544h18.2079v51.4456h14.4947z" fill="#fff" fill-rule="evenodd"/></svg>
+    <text class="name" x="0" y="91">TypeScript</text>
+    <rect class="pill" x="-36" y="104" width="72" height="28" rx="14"/>
+    <text class="statistic" x="0" y="122">33.2%</text>
+  </g>
+  <g class="card" transform="translate(210 0)">
+    <title>JavaScript: 48.0%; 194830 of 405703 relevant Linguist bytes</title>
+    <svg x="-24" y="16" width="48" height="48" viewBox="0 0 630 630" aria-hidden="true">
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2011 Christopher Williams <chris@iterativedesigns.com>,
+                     Manuel Strehl <boldewyn@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<g id="javascript-logo">
+  <rect id="javascript-background" x="0" y="0" width="630" height="630" fill="#f7df1e" />
+  <path id="javascript-j" d="m 165.65,526.47375 48.2125,-29.1775 C 223.16375,513.7875 231.625,527.74 251.92,527.74 c 19.45375,0 31.71875,-7.60975 31.71875,-37.21 l 0,-201.3 59.20375,0 0,202.1375 c 0,61.32 -35.94375,89.23125 -88.385,89.23125 -47.36125,0 -74.8525,-24.52875 -88.8075,-54.13" />
+  <path id="javascript-s" d="m 375,520.13 48.20625,-27.91125 c 12.69,20.72375 29.1825,35.9475 58.36125,35.9475 24.53125,0 40.17375,-12.26475 40.17375,-29.18125 0,-20.29875 -16.06875,-27.48875 -43.135,-39.32625 l -14.7975,-6.3475 c -42.715,-18.18125 -71.05,-41.0175 -71.05,-89.2275 0,-44.40375 33.83125,-78.2375 86.695,-78.2375 37.6375,0 64.7025,13.11125 84.15375,47.36625 l -46.09625,29.60125 c -10.15,-18.1825 -21.1425,-25.37125 -38.0575,-25.37125 -17.33875,0 -28.335,10.995 -28.335,25.37125 0,17.7625 10.99625,24.9525 36.3675,35.94875 l 14.8,6.3425 c 50.325,21.56875 78.66,43.5575 78.66,93.03375 0,53.2875 -41.86625,82.465 -98.11,82.465 -54.97625,0 -90.5,-26.2175 -107.83625,-60.47375" />
+</g>
+</svg>
+    <text class="name" x="0" y="91">JavaScript</text>
+    <rect class="pill" x="-36" y="104" width="72" height="28" rx="14"/>
+    <text class="statistic" x="0" y="122">48.0%</text>
+  </g>
+  <g class="card" transform="translate(350 0)">
+    <title>HTML: 10.1%; 41146 of 405703 relevant Linguist bytes</title>
+    <svg x="-24" y="16" width="48" height="48" viewBox="0 0 512 512" aria-hidden="true">
+  <title>HTML5 Logo Badge</title>
+  <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"/>
+  <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"/>
+  <path fill="#EBEBEB" d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"/>
+  <path fill="#FFF" d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"/>
+</svg>
+    <text class="name" x="0" y="91">HTML</text>
+    <rect class="pill" x="-36" y="104" width="72" height="28" rx="14"/>
+    <text class="statistic" x="0" y="122">10.1%</text>
+  </g>
+  <g class="card" transform="translate(490 0)">
+    <title>CSS: 8.7%; 35194 of 405703 relevant Linguist bytes</title>
+    <svg x="-24" y="16" width="48" height="48" viewBox="0 0 1000 1000" aria-hidden="true">
+  <title id="css-css-logo-title">CSS Logo</title>
+  <desc id="css-css-logo-description">A purple square with rounded corners and the letters CSS inside in white</desc>
+  <path id="css-bg" fill="#639" d="M0 0H840A160 160 0 0 1 1000 160V840A160 160 0 0 1 840 1000H160A160 160 0 0 1 0 840V0Z" />
+  <path id="css-fg" fill="#fff" d="m358.1,920c-64.23-.06-103.86-36.23-103.1-102.79,0,0,0-168.39,0-168.39,0-33.74,9.88-59.4,29.64-76.96,35.49-34.19,117.83-36.27,152.59.52,21.42,18.89,29.5,57.48,27.58,93.49h-73.72c.56-14.15-.19-35.58-8.51-43.65-10.81-14.63-39.36-12.91-46.91,2.32-4.64,8.26-6.96,20.49-6.96,36.67v146.18c0,30.65,10.65,46.15,31.96,46.49,9.96,0,17.53-3.62,22.68-10.85,7.19-8.58,8.31-27.58,7.73-41.32h73.72c5.04,70.07-36.32,119.16-106.71,118.29Zm234.04,0c-71.17.98-103.01-49.66-101.04-118.29h69.59c-1.93,29.92,8.35,57.17,32.99,55.27,10.99,0,18.73-3.44,23.2-10.33,8.5-12.59,10.09-48.95-2.06-63.02-8.49-13.55-39.03-25.51-55.16-33.57-23.03-11.02-39.61-24.1-49.75-39.26-22.87-33.64-20.75-107.48,11.34-137.4,31.18-36.92,112.61-38.62,143.82-.77,19.25,19.51,27.66,57.9,26.03,93.23h-67.02c.57-14.52-.8-37.95-6.44-46.49-3.95-7.23-11.43-10.85-22.42-10.85-19.59,0-29.38,11.71-29.38,35.12.21,24.86,9.9,35.06,32.48,45.45,29.24,11.36,66.42,30.76,79.9,54.24,40.2,71.54,12.62,180.82-86.09,176.65Zm224.76,0c-71.17.98-103.01-49.66-101.04-118.29h69.59c-1.93,29.92,8.35,57.17,32.99,55.27,10.99,0,18.73-3.44,23.2-10.33,8.5-12.59,10.09-48.95-2.06-63.02-8.49-13.55-39.03-25.51-55.16-33.57-23.03-11.02-39.61-24.1-49.75-39.26-22.87-33.64-20.75-107.48,11.34-137.4,31.18-36.92,112.61-38.62,143.82-.77,19.25,19.51,27.66,57.9,26.03,93.23h-67.02c.57-14.52-.8-37.95-6.44-46.49-3.95-7.23-11.43-10.85-22.42-10.85-19.59,0-29.38,11.71-29.38,35.12.21,24.86,9.9,35.06,32.48,45.45,29.24,11.36,66.42,30.76,79.9,54.24,40.2,71.54,12.62,180.82-86.09,176.65Z" />
+</svg>
+    <text class="name" x="0" y="91">CSS</text>
+    <rect class="pill" x="-36" y="104" width="72" height="28" rx="14"/>
+    <text class="statistic" x="0" y="122">8.7%</text>
+  </g>
+</svg>
