@@ -1,0 +1,373 @@
+# This workflow updates the technology statistics strips in the user's GitHub profile
+name: Update GitHub Profile Technology Statistics
+
+# This workflow is triggered every Sunday at 22:00 UTC
+# Scheduled runs continue only on even-numbered ISO weeks
+# It can also be triggered manually at any time
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * 0"
+
+env:
+  BASE_BRANCH: master
+  UPDATE_BRANCH: miervaldis42/update-tech-stats-periodically
+  TECH_STATS_DIRECTORY: scripts/tech-stats
+
+# Contents access is required to push generated SVG changes
+# Pull-request access is required to create & squash-merge the automated update pull request
+permissions:
+  contents: write
+  pull-requests: write
+
+# This workflow may execute only once at a time
+# Other occurrences will be queued until the current one finishes
+concurrency:
+  group: technology-statistics
+  cancel-in-progress: false
+
+# The workflow does the following:
+# 1. Manual runs proceed immediately while scheduled runs proceed only on even-numbered ISO weeks
+# 2. The Technology Statistics dependencies are installed from the committed lockfile
+# 3. TypeScript validation & the Technology Statistics test suite run before live repository analysis
+# 4. The engine analyzes repository evidence, regenerates & validates the statistics
+# 5. Changed statistics are committed to the periodic update branch
+# 6. A pull request is created or refreshed, then squash-merged into the base branch
+# 7. The periodic update branch is realigned with the latest accepted base branch state
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # Decide whether the workflow may continue: manual runs always proceed while scheduled runs proceed only on even-numbered ISO weeks
+      - name: "Cadence: Run Authorization"
+        id: cadence
+        shell: bash
+        run: |
+          # 🔊 Logs
+          echo '🔊 Technology Statistics Workflow triggered.'
+
+          node <<'NODE'
+          const fs = require('node:fs');
+
+          // 🔊 Logs
+          console.log("🔊 Lixi is checking whether she should wake up and update the tech statistics...");
+
+          const day = new Date();
+          day.setUTCHours(0, 0, 0, 0);
+          day.setUTCDate(day.getUTCDate() + 4 - (day.getUTCDay() || 7));
+
+          const start = new Date(Date.UTC(day.getUTCFullYear(), 0, 1));
+          const week = Math.ceil(((day - start) / 86400000 + 1) / 7);
+
+          // Determine whether this workflow run is authorized by the cadence guard
+          const run =
+            process.env.GITHUB_EVENT_NAME !== "schedule" ||
+            week % 2 === 0;
+
+          // 🔊 Logs
+          console.log(`🔊 Lixi checks who woke her up: ${process.env.GITHUB_EVENT_NAME === "schedule" ? "The scheduled alarm ⏰" : "The human 👀"}.`);
+
+          if (process.env.GITHUB_EVENT_NAME === "schedule") {
+            console.log(`🔊 Lixi notices on her calendar that it is currently ISO week ${week}.`);
+            console.log(`🔊 Lixi pulled her soroban to determine that the week is ${week % 2 === 0 ? "even" : "odd"}.`);
+          }
+
+          console.log(`🔊 Lixi's order for the machinery: ${run ? "Go ahead Octocat 🫡!" : "No alignment in the sky, back to sleep 😴..."}`);
+
+          // Expose the authorization result to subsequent workflow steps
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `run=${run}\n`);
+          NODE
+
+      # Check out the latest accepted `master` state so the tests, engine & generated updates run from the current repository version
+      - name: "Checkout: Base Branch Retrieval"
+        if: steps.cadence.outputs.run == 'true'
+        id: checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ env.BASE_BRANCH }}
+          persist-credentials: false
+
+      # Use the Node.js version required by the Technology Statistics Engine
+      - name: "Runtime: Node.js Setup"
+        if: steps.cadence.outputs.run == 'true'
+        id: runtime
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: "22"
+
+      # Install only the Technology Statistics Engine dependencies from its committed lockfile
+      - name: "Dependencies: Engine Installation"
+        if: steps.cadence.outputs.run == 'true'
+        id: dependencies
+        working-directory: ${{ env.TECH_STATS_DIRECTORY }}
+        run: |
+          # 🔊 Logs
+          echo '🔊 Lixi asks Octocat to prepare the TypeScript machinery & install its locked dependencies...'
+
+          corepack enable
+          corepack prepare pnpm@12.4.2 --activate
+          pnpm install --frozen-lockfile
+
+          # 🔊 Logs
+          echo '🔊 Octocat reports that the Technology Statistics machinery is ready ⚙️!'
+
+      # Verify the Technology Statistics system before analyzing live repository data
+      # TypeScript validation runs before the test suite; tests cover calculations, detection, privacy, SVG rendering & workflow behavior
+      - name: "Validation: Engine Verification"
+        if: steps.cadence.outputs.run == 'true'
+        id: validation
+        working-directory: ${{ env.TECH_STATS_DIRECTORY }}
+        run: |
+          # 🔊 Logs
+          echo "🔊 Lixi asks Octocat to run the validation sequence and check that the machinery hasn't rusted..."
+
+          pnpm run typecheck
+          pnpm run test
+
+          # 🔊 Logs
+          echo '🔊 Octocat reports that typechecking & all tests passed ✅. Lixi responds with a thumbs-up 👍🏼!'
+
+      # Run the Technology Statistics Engine update pipeline:
+      # analyze eligible repositories → calculate statistics → render SVGs → validate public outputs
+      - name: "Generation: Statistics Regeneration"
+        if: steps.cadence.outputs.run == 'true'
+        id: generation
+        working-directory: ${{ env.TECH_STATS_DIRECTORY }}
+        env:
+          TECH_STATS_TOKEN: ${{ secrets.TECH_STATS_TOKEN }}
+          TECH_STATS_REPOSITORIES: ${{ secrets.TECH_STATS_REPOSITORIES }}
+        run: |
+          # 🔊 Logs
+          echo '🔊 Lixi asks Octocat to run the machinery for real this time, inspect the repositories & rebuild the tech statistics...'
+
+          pnpm run tech-stats
+
+          # 🔊 Logs
+          echo '🔊 Octocat reports that the machinery finished its work successfully. Lixi nods in approval with both thumbs up 👍🏼!'
+
+      # Persist generated changes on the periodic branch before creating the automated pull request
+      - name: "Publication: Statistics Persistence"
+        if: steps.cadence.outputs.run == 'true'
+        id: persistence
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          # `-e` => Stop if a command fails
+          # `-u` => Stop if an undefined variable is used
+          # `-o pipefail` => Stop if any command in a pipeline fails
+          set -euo pipefail
+
+          # List the generated statistics files allowed to be persisted by this workflow
+          files=(
+            assets/tech-stats/statistics/languages-web-foundations.svg
+            assets/tech-stats/statistics/frontend.svg
+            assets/tech-stats/statistics/ui-systems-design.svg
+            assets/tech-stats/statistics/backend-data.svg
+            assets/tech-stats/statistics/testing-tooling.svg
+            assets/tech-stats/statistics/architecture-delivery.svg
+          )
+
+          # Stage any changes among the generated statistics files
+          git add -- "${files[@]}"
+
+          # Exit successfully when none of the generated statistics files changed
+          if git diff --cached --quiet -- "${files[@]}"; then
+            # 🔊 Logs
+            echo '🔊 Lixi compares the newly generated statistics with the current ones and finds no changes. Back to sleep with a tiny growl 😴...'
+
+            echo 'update=false' >> "$GITHUB_OUTPUT"
+
+            exit 0
+          fi
+
+          # Retrieve changed filenames before committing and format them as a Markdown list
+          changed_statistics="$(
+            git diff --cached --name-only -- "${files[@]}" |
+            while IFS= read -r file; do
+              printf -- '- `%s`\n' "$(basename "$file")"
+            done
+          )"
+
+          # 🔊 Logs
+          echo '🔊 Lixi notices the following changes in the technology statistics:'
+          echo "$changed_statistics"
+          echo '🔊 Lixi confirms that changes occurred and asks Octocat to set them in stone 📝!'
+
+          # Expose the multiline list to later workflow steps
+          {
+            echo 'changed_files<<EOF'
+            echo "$changed_statistics"
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+          # Validate the staged Git diff before creating the update commit
+          git diff --cached --check
+
+          # Create the generated statistics commit locally before pushing it to the update branch
+          git -c user.name='Lixi [bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit \
+              -m '📈 (tech-stats): Technology Statistics Update' \
+              -m 'Update the changed technology statistics from current repository evidence' \
+              -- "${files[@]}"
+
+          # Fetch the current update branch state when it already exists
+          # So, `--force-with-lease` can safely replace its generated commit
+          git fetch origin \
+            "+refs/heads/$UPDATE_BRANCH:refs/remotes/origin/$UPDATE_BRANCH" \
+            2>/dev/null || true
+
+          # Supply the write credential only to this push to avoid storing it in Git configuration
+          auth="$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)"
+
+          GIT_CONFIG_COUNT=1 \
+          GIT_CONFIG_KEY_0=http.https://github.com/.extraheader \
+          GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth" \
+            git push \
+              --force-with-lease \
+              origin \
+              "HEAD:refs/heads/$UPDATE_BRANCH"
+
+          echo 'update=true' >> "$GITHUB_OUTPUT"
+
+          # 🔊 Logs
+          echo '🔊 Octocat reports that the statistics update is safely stored on the periodic branch 🗄️! Lixi is satisfied 😊!'
+
+      # Create the automated pull request that carries the generated statistics update into the base branch
+      - name: "Publication: Pull Request Synchronization"
+        if: steps.persistence.outputs.update == 'true'
+        id: pull-request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHANGED_FILES: ${{ steps.persistence.outputs.changed_files }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # 🔊 Logs
+          echo '🔊 Lixi asks Octocat to check whether a statistics update pull request is already waiting at the gates...'
+
+          # Look for an existing open pull request from the periodic update branch
+          pr_number="$(
+            gh pr list \
+              --base "$BASE_BRANCH" \
+              --head "$UPDATE_BRANCH" \
+              --state open \
+              --json number \
+              --jq '.[0].number // empty'
+          )"
+
+          # Build the pull request body from the generated statistics changes
+          pr_body="$(cat <<EOF
+          The Technology Statistics Engine produced changes in the following generated statistics:
+
+          $CHANGED_FILES
+
+          The updated statistics were generated from the current repository evidence.
+          EOF
+          )"
+
+          # Check whether a pull request already exists by testing whether `pr_number` is empty, then create or refresh it accordingly
+          if [ -z "$pr_number" ]; then
+            # 🔊 Logs
+            echo '🔊 Octocat found no existing pull request, so Lixi orders a new one to be opened 📬!'
+
+            pr_url="$(
+              gh pr create \
+                --base "$BASE_BRANCH" \
+                --head "$UPDATE_BRANCH" \
+                --title '📈 Technology Statistics Update' \
+                --body "$pr_body"
+            )"
+
+            pr_number="${pr_url##*/}"
+
+            # 🔊 Logs
+            echo "🔊 Octocat opened pull request #$pr_number under Lixi's supervision 👀!"
+          else
+            # 🔊 Logs
+            echo "🔊 Octocat found pull request #$pr_number already waiting. Lixi asks him to refresh its contents ♻️!"
+
+            gh pr edit "$pr_number" \
+              --title '📈 Technology Statistics Update' \
+              --body "$pr_body"
+
+            # 🔊 Logs
+            echo "🔊 Pull request #$pr_number is now up to date. Lixi approves the new paperwork 🙆🏽‍♀️!"
+          fi
+
+          # Expose the pull request number to the squash-merge step
+          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
+
+      # Squash-merge the automated pull request so the base branch receives one clean, traceable statistics refresh commit
+      - name: "Publication: Squash Merge"
+        if: steps.persistence.outputs.update == 'true'
+        id: merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pull-request.outputs.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # 🔊 Logs
+          echo "🔊 Lixi gives Octocat permission to carry pull request #$PR_NUMBER through the gates and seal the statistics refresh into the official repository history 📜!"
+
+          # Build the final squash-merge commit body with its pull request metadata
+          merge_body="$(
+            printf '%s\n\n%s' \
+              'Refresh the generated technology statistics from current repository evidence' \
+              "Metadata: gh-pr=$PR_NUMBER"
+          )"
+
+          # Squash-merge the automated pull request into the base branch with a clean commit message
+          gh pr merge "$PR_NUMBER" \
+            --squash \
+            --subject '📈 (tech-stats): Technology Statistics Refresh' \
+            --body "$merge_body"
+
+          # 🔊 Logs
+          echo "🔊 Octocat & Lixi report that pull request #$PR_NUMBER was successfully recorded in the tablets 🎉!"
+
+      # Make the periodic update branch identical to the latest accepted base branch, so the next statistics update starts from a clean history
+      - name: "Publication: Branch Realignment"
+        if: steps.persistence.outputs.update == 'true'
+        id: realignment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # 🔊 Logs
+          echo '🔊 Lixi asks Octocat to realign the periodic draft tablet with the latest official tablet as his final cleanup task 🧹!'
+
+          # Fetch the latest base branch containing the accepted squash-merge commit
+          git fetch origin \
+            "+refs/heads/$BASE_BRANCH:refs/remotes/origin/$BASE_BRANCH"
+
+          # Fetch the current periodic branch state required for the safe `force-with-lease` reset
+          git fetch origin \
+            "+refs/heads/$UPDATE_BRANCH:refs/remotes/origin/$UPDATE_BRANCH"
+
+          # Replace the local working state with the latest accepted base branch state
+          git reset --hard "origin/$BASE_BRANCH"
+
+          # Supply the write credential only to this push; never store it in Git configuration
+          auth="$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)"
+
+          # Realign the persistent periodic branch with the latest accepted base branch state
+          GIT_CONFIG_COUNT=1 \
+          GIT_CONFIG_KEY_0=http.https://github.com/.extraheader \
+          GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth" \
+            git push \
+              --force-with-lease \
+              origin \
+              "HEAD:refs/heads/$UPDATE_BRANCH"
+
+          # 🔊 Logs
+          echo '🔊 Octocat reports that all the tablets are aligned like a soroban in its reset position.'
+          echo '🔊 Lixi pats Octocat, turns off the machinery and goes back to sleep, already dreaming about what might come next 😴...'
