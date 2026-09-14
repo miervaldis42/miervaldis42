@@ -1,0 +1,41 @@
+{
+  "id": "testing-tooling",
+  "title": "Testing & Tooling",
+  "technologies": [
+    {
+      "id": "husky",
+      "name": "Husky",
+      "metric": "adoption",
+      "rule": "husky",
+      "icon": "husky.svg"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "metric": "adoption",
+      "rule": "jest",
+      "icon": "jest.svg"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "metric": "adoption",
+      "rule": "playwright",
+      "icon": "playwright.svg"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "metric": "adoption",
+      "rule": "supabase",
+      "icon": "supabase.svg"
+    },
+    {
+      "id": "biome",
+      "name": "Biome",
+      "metric": "adoption",
+      "rule": "biome",
+      "icon": "biome.svg"
+    }
+  ]
+}

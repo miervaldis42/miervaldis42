@@ -1,0 +1,27 @@
+{
+  "id": "ui-systems-design",
+  "title": "UI Systems & Design",
+  "technologies": [
+    {
+      "id": "figma",
+      "name": "Figma",
+      "metric": "curated",
+      "label": "Curated",
+      "icon": "figma.svg"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "Tailwind CSS",
+      "metric": "adoption",
+      "rule": "tailwindcss",
+      "icon": "tailwindcss.svg"
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "metric": "adoption",
+      "rule": "storybook",
+      "icon": "storybook.svg"
+    }
+  ]
+}
