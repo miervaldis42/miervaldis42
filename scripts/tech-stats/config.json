@@ -1,0 +1,50 @@
+{
+  "owner": "miervaldis42",
+  "include": [],
+  "exclude": [
+    "miervaldis42/miervaldis42"
+  ],
+  "ignoredPathSegments": [
+    "node_modules",
+    "vendor",
+    "dist",
+    "build",
+    "coverage",
+    ".next",
+    ".git",
+    ".yarn",
+    ".pnpm-store",
+    "__fixtures__"
+  ],
+  "maxEvidenceFiles": 500,
+  "maxEvidenceBytes": 2097152,
+  "layout": {
+    "canvasWidth": 560,
+    "cardWidth": 120,
+    "cardGap": 20,
+    "iconSize": 48,
+    "nameFontSize": 15,
+    "statisticFontSize": 13,
+    "pillWidth": 72,
+    "pillHeight": 28,
+    "outerHorizontalPadding": 10,
+    "outerVerticalPadding": 16,
+    "iconNameGap": 27,
+    "namePillGap": 13,
+    "pillTextBaseline": 18,
+    "maxCardsPerRow": 4,
+    "rowGap": 16
+  },
+  "colors": {
+    "light": {
+      "text": "#1f2328",
+      "pill": "#eff1f3",
+      "statistic": "#59636e"
+    },
+    "dark": {
+      "text": "#f0f6fc",
+      "pill": "#262c36",
+      "statistic": "#c9d1d9"
+    }
+  }
+}
