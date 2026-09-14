@@ -47,6 +47,10 @@ export default defineConfig({
   },
   test: {
     environment: "node",
-    include: ["tests/engine/*.ts", "tests/engine/utils/*.ts"],
+    include: [
+      "tests/engine/*.ts",
+      "tests/engine/utils/*.ts",
+      "tests/workflow/*.ts",
+    ],
   },
 });
