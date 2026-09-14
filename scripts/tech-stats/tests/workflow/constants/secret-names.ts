@@ -1,0 +1,8 @@
+const GITHUB_SECRET_VARIABLE = "secrets.";
+
+const GITHUB_WORKFLOW_SECRETS = {
+  analysisToken: "TECH_STATS_TOKEN",
+  repositoryOverride: "TECH_STATS_REPOSITORIES",
+} as const;
+
+export { GITHUB_SECRET_VARIABLE, GITHUB_WORKFLOW_SECRETS };
