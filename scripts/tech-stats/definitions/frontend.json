@@ -1,0 +1,40 @@
+{
+  "id": "frontend",
+  "title": "Frontend",
+  "technologies": [
+    {
+      "id": "react",
+      "name": "React",
+      "metric": "adoption",
+      "rule": "react",
+      "icon": "react.svg"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "metric": "adoption",
+      "rule": "nextjs",
+      "icons": {
+        "light": "nextjs.svg",
+        "dark": "nextjs-dark.svg"
+      }
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "metric": "adoption",
+      "rule": "react-native",
+      "icon": "react.svg"
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "metric": "adoption",
+      "rule": "electron",
+      "icons": {
+        "light": "electron.svg",
+        "dark": "electron-dark.svg"
+      }
+    }
+  ]
+}
