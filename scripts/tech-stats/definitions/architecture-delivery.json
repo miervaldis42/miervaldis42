@@ -1,0 +1,50 @@
+{
+  "id": "architecture-delivery",
+  "title": "Architecture & Delivery",
+  "technologies": [
+    {
+      "id": "git",
+      "name": "Git",
+      "metric": "curated",
+      "label": "Curated",
+      "icon": "git.svg"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "metric": "curated",
+      "label": "Curated",
+      "icons": {
+        "light": "github.svg",
+        "dark": "github-dark.svg"
+      }
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "metric": "curated",
+      "label": "Curated",
+      "icons": {
+        "light": "vercel.svg",
+        "dark": "vercel-dark.svg"
+      }
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "metric": "adoption",
+      "rule": "docker",
+      "icon": "docker.svg"
+    },
+    {
+      "id": "turborepo",
+      "name": "Turborepo",
+      "metric": "adoption",
+      "rule": "turborepo",
+      "icons": {
+        "light": "turborepo.svg",
+        "dark": "turborepo-dark.svg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "languages-web-foundations",
+  "title": "Languages & Web Foundations",
+  "technologies": [
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "metric": "language",
+      "language": "TypeScript",
+      "icon": "typescript.svg"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "metric": "language",
+      "language": "JavaScript",
+      "icon": "javascript.svg"
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "metric": "language",
+      "language": "HTML",
+      "icon": "html.svg"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "metric": "language",
+      "language": "CSS",
+      "icon": "css.svg"
+    }
+  ]
+}

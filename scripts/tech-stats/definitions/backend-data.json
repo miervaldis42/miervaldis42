@@ -1,0 +1,44 @@
+{
+  "id": "backend-data",
+  "title": "Backend & Data",
+  "technologies": [
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "metric": "adoption",
+      "rule": "nodejs",
+      "icon": "nodejs.svg"
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "metric": "adoption",
+      "rule": "nestjs",
+      "icon": "nestjs.svg"
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "metric": "adoption",
+      "rule": "prisma",
+      "icons": {
+        "light": "prisma.svg",
+        "dark": "prisma-dark.svg"
+      }
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "metric": "adoption",
+      "rule": "postgresql",
+      "icon": "postgresql.svg"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "metric": "adoption",
+      "rule": "mongodb",
+      "icon": "mongodb.svg"
+    }
+  ]
+}
