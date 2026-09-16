@@ -1,0 +1,218 @@
+{
+  "biome": {
+    "dependencies": {
+      "exact": [
+        "@biomejs/biome"
+      ]
+    },
+    "configFiles": [
+      "biome.json",
+      "biome.jsonc"
+    ]
+  },
+  "electron": {
+    "dependencies": {
+      "exact": [
+        "electron"
+      ]
+    }
+  },
+  "husky": {
+    "dependencies": {
+      "exact": [
+        "husky"
+      ]
+    },
+    "packageJsonFields": [
+      "husky"
+    ]
+  },
+  "jest": {
+    "dependencies": {
+      "exact": [
+        "jest",
+        "@jest/core"
+      ]
+    },
+    "configFiles": [
+      "jest.config.js",
+      "jest.config.cjs",
+      "jest.config.mjs",
+      "jest.config.ts",
+      "jest.config.cts",
+      "jest.config.mts"
+    ],
+    "packageJsonFields": [
+      "jest"
+    ]
+  },
+  "mongodb": {
+    "dependencies": {
+      "exact": [
+        "mongodb",
+        "mongoose"
+      ]
+    }
+  },
+  "nestjs": {
+    "dependencies": {
+      "exact": [
+        "@nestjs/core"
+      ]
+    },
+    "configFiles": [
+      "nest-cli.json"
+    ]
+  },
+  "nextjs": {
+    "dependencies": {
+      "exact": [
+        "next"
+      ]
+    },
+    "configFiles": [
+      "next.config.js",
+      "next.config.cjs",
+      "next.config.mjs",
+      "next.config.ts",
+      "next.config.cts",
+      "next.config.mts"
+    ]
+  },
+  "playwright": {
+    "dependencies": {
+      "exact": [
+        "@playwright/test",
+        "playwright",
+        "playwright-core"
+      ]
+    },
+    "configFiles": [
+      "playwright.config.js",
+      "playwright.config.cjs",
+      "playwright.config.mjs",
+      "playwright.config.ts",
+      "playwright.config.cts",
+      "playwright.config.mts"
+    ]
+  },
+  "postgresql": {
+    "dependencies": {
+      "exact": [
+        "pg",
+        "postgres",
+        "@neondatabase/serverless",
+        "postgres.js"
+      ]
+    }
+  },
+  "prisma": {
+    "dependencies": {
+      "exact": [
+        "prisma",
+        "@prisma/client"
+      ]
+    },
+    "configFiles": [
+      "schema.prisma",
+      "prisma.config.js",
+      "prisma.config.cjs",
+      "prisma.config.mjs",
+      "prisma.config.ts",
+      "prisma.config.cts",
+      "prisma.config.mts"
+    ]
+  },
+  "react": {
+    "dependencies": {
+      "exact": [
+        "react"
+      ]
+    }
+  },
+  "react-native": {
+    "dependencies": {
+      "exact": [
+        "react-native"
+      ]
+    }
+  },
+  "sentry": {
+    "dependencies": {
+      "exact": [
+        "@sentry/node",
+        "@sentry/react",
+        "@sentry/nextjs"
+      ]
+    },
+    "configFiles": [
+      "sentry.client.config.js",
+      "sentry.client.config.mjs",
+      "sentry.client.config.ts",
+      "sentry.server.config.js",
+      "sentry.server.config.mjs",
+      "sentry.server.config.ts"
+    ]
+  },
+  "storybook": {
+    "dependencies": {
+      "exact": [
+        "storybook"
+      ],
+      "prefix": [
+        "@storybook/"
+      ]
+    },
+    "configFiles": [
+      ".storybook/main.js",
+      ".storybook/main.cjs",
+      ".storybook/main.mjs",
+      ".storybook/main.ts",
+      ".storybook/main.cts",
+      ".storybook/main.mts"
+    ]
+  },
+  "supabase": {
+    "dependencies": {
+      "exact": [
+        "supabase",
+        "@supabase/supabase-js",
+        "@supabase/ssr"
+      ]
+    },
+    "configFiles": [
+      "supabase/config.toml"
+    ]
+  },
+  "tailwindcss": {
+    "dependencies": {
+      "exact": [
+        "tailwindcss"
+      ]
+    },
+    "configFiles": [
+      "tailwind.config.js",
+      "tailwind.config.cjs",
+      "tailwind.config.mjs",
+      "tailwind.config.ts",
+      "tailwind.config.cts",
+      "tailwind.config.mts"
+    ]
+  },
+  "turborepo": {
+    "dependencies": {
+      "exact": [
+        "turbo"
+      ]
+    },
+    "configFiles": [
+      "turbo.json",
+      "turbo.jsonc"
+    ]
+  },
+  "vercel": {
+    "configFiles": [
+      "vercel.json"
+    ]
+  }
+}

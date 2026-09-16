@@ -1,0 +1,16 @@
+{
+  "ignoredPathSegments": [
+    "node_modules",
+    "vendor",
+    "dist",
+    "build",
+    "coverage",
+    ".next",
+    ".git",
+    ".yarn",
+    ".pnpm-store",
+    "__fixtures__"
+  ],
+  "maxEvidenceFiles": 500,
+  "maxEvidenceBytes": 2097152
+}
