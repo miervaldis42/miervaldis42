@@ -20,10 +20,10 @@
       "@constants/*": ["./src/constants/*"],
       "@definitions/*": ["./definitions/*"],
       "@detectors/*": ["./detectors/*"],
-      "@tests/*": ["./src/tests/*"]
+      "@tests/*": ["./tests/*"]
     },
 
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"]
+  "include": ["src/**/*.ts", "tests/**/*", "vitest.config.ts"]
 }
