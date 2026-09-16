@@ -1,23 +1,4 @@
 {
-  "owner": "miervaldis42",
-  "include": [],
-  "exclude": [
-    "miervaldis42/miervaldis42"
-  ],
-  "ignoredPathSegments": [
-    "node_modules",
-    "vendor",
-    "dist",
-    "build",
-    "coverage",
-    ".next",
-    ".git",
-    ".yarn",
-    ".pnpm-store",
-    "__fixtures__"
-  ],
-  "maxEvidenceFiles": 500,
-  "maxEvidenceBytes": 2097152,
   "layout": {
     "canvasWidth": 560,
     "cardWidth": 120,
