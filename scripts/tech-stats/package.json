@@ -16,11 +16,13 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "tech-stats": "tsx src/index.ts generate",
-    "tech-stats:report": "tsx src/index.ts analyze"
+    "tech-stats:report": "tsx src/index.ts analyze",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@types/node": "^22.20.3",
     "typescript": "^5.2.2",
-    "tsx": "^3.12.0"
+    "tsx": "^3.12.0",
+    "vitest": "^0.34.1"
   }
 }
