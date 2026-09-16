@@ -1,0 +1,5 @@
+{
+  "definitions": "scripts/tech-stats/definitions",
+  "icons": "assets/tech-stats/icons",
+  "statistics": "assets/tech-stats/statistics"
+}
