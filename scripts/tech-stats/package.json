@@ -4,6 +4,7 @@
   "author": "miervaldis42 (https://github.com/miervaldis42)",
   "description": "A deterministic engine that analyzes GitHub repository evidence and generates configurable technology statistics.",
   "private": true,
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miervaldis42/miervaldis42.git"
