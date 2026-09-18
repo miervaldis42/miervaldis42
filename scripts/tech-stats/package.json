@@ -13,6 +13,7 @@
   },
   "type": "module",
   "packageManager": "pnpm@12.4.2",
+  "license": "UNLICENSED",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "tech-stats": "tsx src/index.ts generate",
