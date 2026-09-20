@@ -1,7 +1,10 @@
 // 📦 Imports
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { parseEnv } from "node:util";
+
+// ⚙️ Engine
+import { loadDefinitions } from "@/load-definitions.js";
 
 // 📍 Engine Paths
 import {
@@ -9,6 +12,10 @@ import {
   ENGINE_ROOT,
   REPOSITORY_ROOT,
 } from "@constants/paths.js";
+
+// 🧰 Utilities
+import { readJson } from "@utils/json.js";
+import { isRecord, isStringArray } from "@utils/type-guards.js";
 
 // 🏷️ Types
 import type {
@@ -19,34 +26,18 @@ import type {
   LoadedConfig,
 } from "@customTypes/config.js";
 import type { DetectionRules } from "@customTypes/detection.js";
-import type {
-  TechnologyDefinition,
-  StatisticsDefinition,
-} from "@customTypes/definitions.js";
 import type { RenderingSettings } from "@customTypes/rendering.js";
 
 /*
  * 🧰 Utilities
  */
 
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return Boolean(value && typeof value === "object" && !Array.isArray(value));
-}
-
-function readJson(filename: string): unknown {
-  return JSON.parse(readFileSync(filename, "utf8")) as unknown;
-}
-
-function isStringArray(value: unknown): value is string[] {
-  return (
-    Array.isArray(value) && value.every((item) => typeof item === "string")
-  );
-}
-
+// Check the format of a repository name after its value has been validated as a string
 function isRepositoryName(value: string): boolean {
   return /^[\w.-]+\/[\w.-]+$/.test(value);
 }
 
+// Resolve a validated repository-relative path while preventing traversal outside the repository
 function resolveRepositoryPath(configuredPath: string): string {
   if (!configuredPath || path.isAbsolute(configuredPath)) {
     throw new Error(
@@ -290,147 +281,6 @@ function validateDetectionRules(value: unknown): DetectionRules {
   }
 
   return rules;
-}
-
-function validateTechnologyDefinition(
-  value: unknown,
-  ids: Set<string>,
-): TechnologyDefinition {
-  if (
-    !isRecord(value) ||
-    typeof value.id !== "string" ||
-    !/^[a-z0-9-]+$/.test(value.id) ||
-    typeof value.name !== "string" ||
-    !value.name.trim() ||
-    typeof value.metric !== "string"
-  ) {
-    throw new Error("🔊 Invalid technology definition.");
-  }
-
-  if (ids.has(value.id)) {
-    throw new Error(`🔊 Duplicate technology definition: ${value.id}.`);
-  }
-
-  ids.add(value.id);
-
-  const hasIcon = typeof value.icon === "string" && Boolean(value.icon.trim());
-
-  const hasThemeIcons =
-    isRecord(value.icons) &&
-    typeof value.icons.light === "string" &&
-    Boolean(value.icons.light.trim()) &&
-    typeof value.icons.dark === "string" &&
-    Boolean(value.icons.dark.trim());
-
-  if (hasIcon === hasThemeIcons) {
-    throw new Error(
-      `🔊 Technology ${value.id} must define either icon or light/dark icons.`,
-    );
-  }
-
-  const iconDefinition = hasIcon
-    ? { icon: value.icon as string }
-    : {
-        icons: {
-          light: (value.icons as Record<string, unknown>).light as string,
-          dark: (value.icons as Record<string, unknown>).dark as string,
-        },
-      };
-
-  if (
-    value.metric === "language" &&
-    typeof value.language === "string" &&
-    value.language.trim()
-  ) {
-    return {
-      id: value.id,
-      name: value.name,
-      metric: "language",
-      language: value.language,
-      ...iconDefinition,
-    };
-  }
-
-  if (
-    value.metric === "adoption" &&
-    typeof value.rule === "string" &&
-    value.rule.trim()
-  ) {
-    return {
-      id: value.id,
-      name: value.name,
-      metric: "adoption",
-      rule: value.rule,
-      ...iconDefinition,
-    };
-  }
-
-  if (
-    value.metric === "curated" &&
-    typeof value.label === "string" &&
-    value.label.trim()
-  ) {
-    return {
-      id: value.id,
-      name: value.name,
-      metric: "curated",
-      label: value.label,
-      ...iconDefinition,
-    };
-  }
-
-  throw new Error(
-    `🔊 Invalid ${value.metric} metric definition for ${value.id}.`,
-  );
-}
-
-function loadDefinitions(definitionsDirectory: string): StatisticsDefinition[] {
-  if (!existsSync(definitionsDirectory)) {
-    throw new Error("🔊 Statistics definitions directory does not exist.");
-  }
-
-  const filenames = readdirSync(definitionsDirectory)
-    .filter((name) => name.endsWith(".json"))
-    .sort();
-
-  if (!filenames.length) {
-    throw new Error("🔊 No statistics definitions were found.");
-  }
-
-  const technologyIds = new Set<string>();
-  const sectionIds = new Set<string>();
-
-  return filenames.map((filename) => {
-    const value = readJson(path.join(definitionsDirectory, filename));
-
-    if (
-      !isRecord(value) ||
-      typeof value.id !== "string" ||
-      !/^[a-z-]+$/.test(value.id) ||
-      typeof value.title !== "string" ||
-      !value.title.trim() ||
-      !Array.isArray(value.technologies) ||
-      !value.technologies.length
-    ) {
-      throw new Error(`🔊 Invalid statistics definition: ${filename}.`);
-    }
-
-    if (sectionIds.has(value.id)) {
-      throw new Error(
-        `🔊 Duplicate statistics section definition: ${value.id}.`,
-      );
-    }
-
-    sectionIds.add(value.id);
-
-    return {
-      id: value.id,
-      title: value.title,
-      technologies: value.technologies.map((technology) =>
-        validateTechnologyDefinition(technology, technologyIds),
-      ),
-    };
-  });
 }
 
 /*
