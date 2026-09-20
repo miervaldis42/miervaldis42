@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/statistics-definition.schema.json",
   "id": "languages-web-foundations",
   "title": "Languages & Web Foundations",
   "technologies": [
