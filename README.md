@@ -42,3 +42,29 @@
 🤝 **AI as Engineering Collaborator** — _Brainstorm with it, challenge assumptions & prototype ideas quickly while keeping verification, architectural judgment & final decisions human-led._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "My Little Laboratory"
+
+## 💭 On my mind~
+
+### 🔭 Currently Building
+
+🌌 **U-verse Ecosystem**
+
+_A **personal portfolio universe** bringing together full-stack engineering, design direction, reusable systems & the tools supporting them._
+
+[Explore the project →](https://www.u-verse.world/)
+
+🧰 **Atelier**
+
+_A **project factory** for **starting & structuring new projects** with reusable architecture, conventions & tooling._
+
+[Explore the project →](https://atelier-one-livid.vercel.app/)
+
+🌺 **Songe Péi Ecosystem**
+
+_An evolving **ecosystem of automation tools & digital workflows** for managing [Songe Péi 🌺](https://www.booking.com/hotel/re/songe-pei-t2-est-reunion-piscine-amp-parking.html?lang=en-us), a **short-term rental apartment** on Réunion Island._
+
+[Explore the project →](https://songe-pei-ecosystem.vercel.app/)
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
