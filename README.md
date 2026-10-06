@@ -156,3 +156,12 @@ _An evolving **ecosystem of automation tools & digital workflows** for managing 
 > _The percentages above represent the share of my analyzed repositories in which each technology is detected._
 
 [🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "Mascot - Private Cocoon"
+
+<h3 align="center"><b>🤫 <em>A wild Lixi is dreaming about our next projects~</em> 🙊</b></h3>
+
+<div>
+    <img src="./assets/branding/mascot/thoughts/dream-cloud.svg" alt="Lixi's dreams showing miervaldis42's ongoing projects" />
+    <img src="./assets/branding/mascot/lixi.png" alt="Lixi, U-verse mascot" title="Lixi" width="50%" />
+</div>
