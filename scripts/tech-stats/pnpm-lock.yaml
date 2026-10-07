@@ -172,7 +172,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^22.20.3
-        version: 22.20.3
+        version: 22.20.5
       tsx:
         specifier: ^3.12.0
         version: 3.14.0
@@ -317,8 +317,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@types/node@22.20.3':
-    resolution: {integrity: sha512-DZmzkmwHzXrLPAXPyKNDzlIwMMUZCVacoD25ywdy5YTKGbOx/2ld+Q38Im2zJ0vBuZP5Prd3VZutKZyXwkOS8A==}
+  '@types/node@22.20.5':
+    resolution: {integrity: sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==}
 
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -428,7 +428,7 @@ snapshots:
   '@esbuild/win32-x64@0.18.20':
     optional: true
 
-  '@types/node@22.20.3':
+  '@types/node@22.20.5':
     dependencies:
       undici-types: 6.21.0
 
