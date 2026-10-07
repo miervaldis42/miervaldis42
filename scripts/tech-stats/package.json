@@ -1,0 +1,32 @@
+{
+  "name": "technology-statistics",
+  "version": "1.0.0",
+  "author": "miervaldis42 (https://github.com/miervaldis42)",
+  "description": "A deterministic engine that analyzes GitHub repository evidence and generates configurable technology statistics.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miervaldis42/miervaldis42.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miervaldis42/miervaldis42/issues"
+  },
+  "type": "module",
+  "packageManager": "pnpm@12.4.2",
+  "license": "UNLICENSED",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "tech-stats": "tsx src/index.ts generate",
+    "tech-stats:report": "tsx src/index.ts analyze",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "typescript": "^5.2.2",
+    "tsx": "^3.12.0",
+    "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.1"
+  }
+}

@@ -1,47 +1,167 @@
-# 🌌 Welcome to my U-verse ! 🌌
+[//]: # "Personal Logo Section"
 
-**My Chosen Aspiration:** _TypeScript Full-Stack Developer & Product Manager_
+![Alix CAZET - Personal Logo](./assets/branding/logo_ac.svg)
+
+# 🌌 Welcome to my U-verse
+
+[//]: # "Current Job Title & Objective"
+
+<div align="center">
+    <h4>My Chosen Aspiration</h4>
+    <p>
+        <em>
+            TypeScript Full-Stack Developer
+            <br/>Product-minded Individual Contributor
+            <br/><br/><strong>React · Next.js · Node.js · Figma</strong>
+        </em>
+    </p>
+</div>
+
+<p align="center">
+    <br/>
+    <a href="https://www.linkedin.com/in/alixcazet/">
+        <img
+            src="https://custom-icon-badges.demolab.com/badge/_-LinkedIn-blue.svg?logo=linkedin-logo&labelColor=white"
+            alt="LinkedIn"
+            title="Visit my LinkedIn profile"
+            width="120"
+        />
+    </a>
+</p>
+
+[//]: # "My Ways of Working"
+
+## 🧠 My Documented Philosophy
+
+🧩 **Compartmentalizing Complexity** — _Set clear boundaries for growing systems to remain understandable, adaptable & maintainable._
+
+📚 **Documentation as Blueprint** — _Give future humans & AI collaborators a map through a project's architecture, conventions & reasoning._
+
+🧪 **Tooling & Testing as Foundation** — _Treat tooling & testing as structural parts of the product, not final details postponed to the end._
+
+🤝 **AI as Engineering Collaborator** — _Brainstorm with it, challenge assumptions & prototype ideas quickly while keeping verification, architectural judgment & final decisions human-led._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "My Little Laboratory"
+
+## 💭 On my mind~
+
+### 🔭 Currently Building
+
+🌌 **U-verse Ecosystem**
+
+_A **personal portfolio universe** bringing together full-stack engineering, design direction, reusable systems & the tools supporting them._
+
+[Explore the project →](https://www.u-verse.world/)
+
+🧰 **Atelier**
+
+_A **project factory** for **starting & structuring new projects** with reusable architecture, conventions & tooling._
+
+[Explore the project →](https://atelier-one-livid.vercel.app/)
+
+🌺 **Songe Péi Ecosystem**
+
+_An evolving **ecosystem of automation tools & digital workflows** for managing [Songe Péi 🌺](https://www.booking.com/hotel/re/songe-pei-t2-est-reunion-piscine-amp-parking.html?lang=en-us), a **short-term rental apartment** on Réunion Island._
+
+[Explore the project →](https://songe-pei-ecosystem.vercel.app/)
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "My Daily Learning Doses"
+
+### 🌱 Currently Learning
+
+🤖 **AI Engineering** — _Agents, RAG, MCP & AI-assisted workflows through skills & plugins._
+
+🧭 **Product Engineering** — _Product discovery, architecture, developer experience & iterative delivery._
+
+🎨 **Programmatic Illustration & Animation** — _2D vector graphics, 3D scenes, motion & lightweight interactive visuals._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "The Way I Am"
+
+## ✨ My Unexpected Talents
+
+🕵🏾‍♀️ **Detective** _(a.k.a Research & Discovery)_ — _**Investigate customer needs & market context** to uncover the details that shape better product decisions._
+
+👩🏾‍💼 **Coordinator** _(a.k.a Product Synthesis & Planning)_ — _**Connect ideas, requirements & constraints** to turn scattered inputs into a coherent product direction._
+
+👩🏾‍🏫 **Advisor** _(a.k.a Guidance & Knowledge Sharing)_ — _**Share tailored guidance** to help people strengthen their skills, decisions & products._
+
+👩🏾‍🎨 **Designer** _(a.k.a UI/UX & Visual Direction)_ — _**Craft engaging interfaces** that translate product ideas into clear & expressive user experiences._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "HRs' Hunting Field"
 
 ## ⚔️ My Honed Skills
 
-### Platforms
+### 👨‍💻 Applications & Systems
 
-🖥️&nbsp;&nbsp;&nbsp;&nbsp;💻&nbsp;&nbsp;&nbsp;&nbsp;📟&nbsp;&nbsp;&nbsp;&nbsp;📱
+🌐 Web Apps · 📱 Mobile Apps · 🖥️ Desktop Apps · ⚙️ Servers & APIs · 🤖 AI Automation
 
-### Frontend
+### 📐 Responsive Interfaces
 
-[<img title="Next.js" alt="'Next.js' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="16px" />](https://nextjs.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="React Native" alt="'React Native' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="16px" />](https://reactnative.dev/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Electron.js" alt="'Electron.js' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" width="16px"  />](https://www.electronjs.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="TypeScript" alt="'TypeScript' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="16px" />](https://www.typescriptlang.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Storybook" alt="'Storybook' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg" width="16px" />](https://storybook.js.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="TailwindCSS" alt="'TailwindCSS' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="16px" />](https://tailwindcss.com/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Redux" alt="'Redux' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" width="16px" />](https://redux.js.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Playwright" alt="'Playwright' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" width="16px" />](https://playwright.dev/)
+🖥️ Desktop · 💻 Laptop · 📟 Tablet · 📱 Mobile
 
-### Backend
+### 🧬 Languages & Web Foundations
 
-[<img title="Nest.js" alt="'Nest.js' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" width="16px" />](https://nestjs.com/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Swagger" alt="'Swagger' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" width="16px" />](https://swagger.io/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Socket.io" alt="'Socket.io' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" width="16px" />](https://socket.io/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Prisma" alt="'Prisma' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" width="16px" />](https://www.prisma.io/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="GraphQL" alt="'GraphQL' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" width="16px" />](https://graphql.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="PostgreSQL" alt="'PostgreSQL' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="16px" />](https://www.postgresql.org/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="MongoDB" alt="'MongoDB' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="16px" />](https://www.mongodb.com/)
+![Languages & Web Foundations statistics](./assets/tech-stats/statistics/languages-web-foundations.svg)
 
-### Tools
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above are calculated from [GitHub Linguist](https://github.com/github-linguist/linguist) data across selected analyzed repositories._
 
-[<img title="Figma" alt="'Figma' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="16px" />](https://figma.com/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Jira" alt="'Jira' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" width="16px" />](https://www.atlassian.com/software/jira)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="GitHub" alt="'GitHub' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="16px" />](https://github.com/)&nbsp;&nbsp;&nbsp;&nbsp;
-[<img title="Docker" alt="'Docker' icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" width="16px" />](https://www.docker.com/)
+### 🧩 Frontend
 
-## 🎒 My Unexpected Talents
+![Frontend statistics](./assets/tech-stats/statistics/frontend.svg)
 
-🕵🏾‍♀️ **Detective:** _Investigate thoroughly into the intricacies of customers' needs & their market landscape_
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
 
-👩🏾‍💼 **Coordinator:** _Harmonize the myriad of customers' ideas & requirements to distill a comprehensive purpose_
+### 🎨 UI Systems & Design
 
-👩🏾‍🏫 **Advisor:** _Provide tailored advice & guidance to elevate customers' skills or/and to refine their products_
+![UI Systems & Design statistics](./assets/tech-stats/statistics/ui-systems-design.svg)
 
-👩🏾‍🎨 **Designer:** _Craft captivating user interfaces that bring customers' visions to life_
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### ⚙️ Backend & Data
+
+![Backend & Data statistics](./assets/tech-stats/statistics/backend-data.svg)
+
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### 🧪 Testing & Tooling
+
+![Testing & Tooling statistics](./assets/tech-stats/statistics/testing-tooling.svg)
+
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+### 🏗️ Architecture & Delivery
+
+![Architecture & Delivery statistics](./assets/tech-stats/statistics/architecture-delivery.svg)
+
+> 🖋️ **_N.B.:_**
+>
+> _The percentages above represent the share of my analyzed repositories in which each technology is detected._
+
+[🌪️ Back to the top](#-welcome-to-my-u-verse)
+
+[//]: # "Mascot - Private Cocoon"
+
+<h3 align="center"><b>🤫 <em>A wild Lixi is dreaming about our next projects~</em> 🙊</b></h3>
+
+<div>
+    <img src="./assets/mascot/thoughts/dream-cloud.svg" alt="Cloud displaying miervaldis42's ongoing projects" />
+    <img src="./assets/mascot/lixi.png" alt="Sleeping Lixi mascot" title="Lixi" width="50%" />
+</div>
