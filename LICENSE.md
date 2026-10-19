@@ -1,4 +1,6 @@
-All Rights Reserved.
+Copyright © 2026 Alix CAZET, trading as U-verse (GitHub: miervaldis42)
+
+**All Rights Reserved.**
 
 No permission is granted to use, copy, reproduce, modify, adapt, distribute, publish, display, sublicense, sell, or otherwise exploit the code or original assets contained in this repository without explicit written permission from the author.
 
